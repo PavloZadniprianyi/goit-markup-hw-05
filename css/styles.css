@@ -11,7 +11,6 @@
   --border-bottom-color: #eeeeee;
   --padding-standart: 94px 0px;
   --soc-icon-color: AFB1B8;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -113,6 +112,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -132,9 +134,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-
-  /* opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /* .current:hover::after {
@@ -159,6 +158,15 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-icon,
+.smartphone-icon {
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .connection-mail:hover,
@@ -169,13 +177,6 @@ img {
 .connection-tel:hover,
 .connection-tel:focus {
   color: var(--accent-color);
-}
-
-.mail-icon,
-.smartphone-icon {
-  display: inline-block;
-  fill: currentColor;
-  margin-right: 10px;
 }
 
 /* ------------------HERO-------------------- */
@@ -226,14 +227,13 @@ img {
   border-radius: 4px;
   color: var(--hero-text-color);
   background-color: var(--accent-color);
-  
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--second-accent-color);
-  opacity: 1;
 }
 
 .button {
@@ -314,6 +314,34 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.promo-item {
+  position: relative;
+}
+
+.promo-label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  right: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.name-label {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 /* ------------------ABOUT------------------- */
@@ -416,6 +444,14 @@ img {
   background-color: var(--hero-text-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-icon {
+  fill: rgba(175, 177, 184, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .background-clients:hover,
@@ -434,10 +470,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.clients-icon {
-  fill: rgba(175, 177, 184, 1);
 }
 
 /* ------------------ICON------------------- */
@@ -464,10 +496,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teammate-soc-icon {
   fill: rgba(175, 177, 184, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teammate-soc-link:hover,
@@ -552,6 +588,14 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-icon {
+  fill: var(--third-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -564,18 +608,27 @@ img {
   fill: var(--third-text-color);
 }
 
-.footer-soc-icon {
-  fill: var(--third-text-color);
-}
-
 /* ------------------CONTACTS------------------- */
 
 .footer-address {
   font-style: normal;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list .footer-item + .footer-item {
   margin-top: 9px;
+}
+
+.footer-link-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail,
@@ -584,6 +637,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-adress:hover,
@@ -599,13 +655,6 @@ img {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
-}
-
-.footer-link-adress {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--third-text-color);
 }
 
 /* ------------------PORTFOLIO------------------- */
